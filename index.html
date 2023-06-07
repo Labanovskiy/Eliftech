@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Delivery app</title>
+</head>
+<body>
+    <!-- NAV MENU -->
+    <nav class="my-[50px] mx-[200px] flex gap-[100px] text-blue-500 font-bold">
+        <a href="index.html" class="hover:text-yellow-500">Shop</a>
+        
+        <a href="cart.html" class="hover:text-yellow-500">Shopping cart</a>
+    </nav>
+    <!-- NAV MENU -->
+
+    <!-- MAIN -->
+    <main class="flex mx-[30px]">
+        <div class="min-w-[300px] mx-[50px] border-2 border-solid border-blue-100 rounded-lg h-fit">
+            <!-- SHOPS -->
+            <h2 class="my-[50px] text-center text-blue-500 font-bold">Shops:</h2>
+            <div class="flex flex-col gap-y-[50px] mb-[50px]">
+                <a href="#" class="mx-[20px] py-[20px] text-center text-blue-500 border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100">Mc Donalds</a>
+                <a href="#" class="mx-[20px] py-[20px] text-center text-blue-500 border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100">KFC</a>
+                <a href="#" class="mx-[20px] py-[20px] text-center text-blue-500 border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100">Burgers</a>
+                <a href="#" class="mx-[20px] py-[20px] text-center text-blue-500 border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100">Salateira</a>
+            </div>
+            <!-- SHOPS -->
+        </div>
+
+        <!-- Shopping cart --> 
+        <div class="flex flex-wrap justify-start gap-[10px] border-2 border-solid border-blue-100 rounded-lg h-fit w-fit">
+            <div class="w-[300px] h-[400px] m-[20px] flex flex-col text-blue-500 border-2 border-solid border-blue-100 rounded-lg card" data-id="01">
+                <div class="py-[20px] px-[20px]">
+                    <img src="./img/burger.jpg" alt="bugrer" class="w-[250px] h-[250px] img">
+                </div>
+                <div class="flex gap-[20px] w-auto">
+                    <h3 class="px-[20px] py-[20px] title">Big Testy <br>
+                        <span class="font-bold hover:text-yellow-500 price">140</span> uah
+                    </h3>
+                    
+                    <button class="px-[20px] py-[20px] border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100" data-add id="button">add to Card</button>
+                </div>
+           </div>
+
+           <div class="w-[300px] h-[400px] m-[20px] flex flex-col text-blue-500 border-2 border-solid border-blue-100 rounded-lg card" data-id="02">
+                <div class="py-[20px] px-[20px]">
+                    <img src="./img/burger.jpg" alt="bugrer" class="w-[250px] h-[250px] img">
+                </div>
+                <div class="flex gap-[20px] w-auto">
+                    <h3 class="px-[20px] py-[20px] title">Big Testy <br>
+                        <span class="font-bold hover:text-yellow-500 price">140</span> uah
+                    </h3>
+                    <button class="px-[20px] py-[20px] border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100" data-add id="button">add to Card</button>
+                </div>
+            </div>
+
+            <div class="w-[300px] h-[400px] m-[20px] flex flex-col text-blue-500 border-2 border-solid border-blue-100 rounded-lg card" data-id="03">
+                <div class="py-[20px] px-[20px]">
+                    <img src="./img/burger.jpg" alt="bugrer" class="w-[250px] h-[250px] img">
+                </div>
+                <div class="flex gap-[20px] w-auto">
+                    <h3 class="px-[20px] py-[20px] title">Big Testy <br>
+                        <span class="font-bold hover:text-yellow-500 price">140</span> uah
+                    </h3>
+                    <button class="px-[20px] py-[20px] border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100" data-add id="button">add to Card</button>
+                </div>
+            </div>
+
+            <div class="w-[300px] h-[400px] m-[20px] flex flex-col text-blue-500 border-2 border-solid border-blue-100 rounded-lg card" data-id="04">
+                <div class="py-[20px] px-[20px]">
+                    <img src="./img/burger.jpg" alt="bugrer" class="w-[250px] h-[250px] img">
+                </div>
+                <div class="flex gap-[20px] w-auto">
+                    <h3 class="px-[20px] py-[20px] title">Big Testy <br>
+                        <span class="font-bold hover:text-yellow-500 price">140</span> uah
+                    </h3>
+                    <button class="px-[20px] py-[20px] border-2 border-solid border-blue-100 rounded-lg hover:bg-slate-100" data-add id="button">add to Card</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Shopping cart -->   
+    </main>
+
+    <!-- Footer -->
+    <div class="my-[50px] text-center text-blue-500">
+        <p>Copyright © 2023 by <a href="https://www.facebook.com/ihor.sydorov" class="text-blue-500 font-bold hover:text-yellow-500">Sydorov Ihor</a></p>
+    </div>
+    <!-- Footer -->
+    <script src="./js/cart.js"></script>
+    <script src="./js/conter.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

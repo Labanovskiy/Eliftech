@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Delivery app</title>
+</head>
+<body>
+    <!-- NAV MENU -->
+    <nav class="my-[50px] mx-[200px] flex gap-[100px] text-blue-500 font-bold">
+        <a href="index.html" class="hover:text-yellow-500">Shop</a>
+        
+        <a href="cart.html" class="hover:text-yellow-500">Shopping cart</a>
+    </nav>
+    <!-- NAV MENU -->
+
+    <!-- MAIN -->
+    <main class="flex mx-[30px]">
+        <div class="min-w-[450px] mx-[50px] border-2 border-solid border-blue-100 rounded-lg h-fit">
+            <div class="mx-[20px] my-[20px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28721.005421682195!2d30.471021180747112!3d50.485748755659685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdfd022c274b%3A0x72f7ab0b682b793!2z0J_QvtGH0LDQudC90LA!5e0!3m2!1sru!2sua!4v1686067703283!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="" method="post">
+                <div class="flex flex-col border-solid border-blue-100 rounded-lg mx-[20px] my-[20px]">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="your name" class="border-2 border-solid border-blue-100 rounded-lg" required>
+                </div>
+                <div class="flex flex-col border-solid border-blue-100 rounded-lg mx-[20px] my-[20px]">
+                    <label for="mail">Email:</label>
+                    <input type="mail" id="mail" placeholder="your email" class="border-2 border-solid border-blue-100 rounded-lg" required>
+                </div>
+                <div class="flex flex-col border-solid border-blue-100 rounded-lg mx-[20px] my-[20px]">
+                    <label for="number">Phone:</label>
+                    <input type="number" id="number" placeholder="your phone" class="border-2 border-solid border-blue-100 rounded-lg" required>
+                </div>
+                <div class="flex flex-col border-solid border-blue-100 rounded-lg mx-[20px] my-[20px]">
+                    <label for="adress">Adress:</label>
+                    <input type="text" id="adress" placeholder="your adress" class="border-2 border-solid border-blue-100 rounded-lg" required>
+                </div>
+                
+            </form>
+        </div>
+
+        <!-- Shopping cart --> 
+        <div class="flex flex-col flex-wrap justify-center gap-[10px] border-2 border-solid border-blue-100 rounded-lg h-fit w-fit" id="targetElement">
+            <div class="basket-item w-[600px] h-[250px] m-[20px] flex gap-[50px] text-blue-500 border-2 border-solid border-blue-100 rounded-lg">
+                <div class="py-[20px] px-[20px]">
+                    <img src="./img/burger.jpg" alt="bugrer" class="w-[200px] h-[200px]">
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="px-[20px] py-[20px]">Big Testy <br>
+                        <span class="font-bold hover:text-yellow-500" data-price>140</span> uah
+                    </h3>
+                    <div class="flex justify-between text-center bg-blue-100 rounded-lg parent">
+                        <div class="p-[20px] cursor-pointer hover:bg-slate-100" data-action="minus">-</div>
+                        <div class="p-[20px] cursor-pointer" data-counter>1</div>
+                        <div class="p-[20px] cursor-pointer hover:bg-slate-100" data-action="plus">+</div>
+                    </div>
+                </div>
+           </div>
+           <div class="basket-item w-[600px] h-[250px] m-[20px] flex gap-[50px] text-blue-500 border-2 border-solid border-blue-100 rounded-lg">
+            <div class="py-[20px] px-[20px]">
+                <img src="./img/burger.jpg" alt="bugrer" class="w-[200px] h-[200px]">
+            </div>
+            <div class="flex flex-col">
+                <h3 class="px-[20px] py-[20px]">Big Testy <br>
+                    <span class="font-bold hover:text-yellow-500" data-price>140</span> uah
+                </h3>
+                <div class="flex justify-between text-center bg-blue-100 rounded-lg parent">
+                    <div class="p-[20px] cursor-pointer hover:bg-slate-100" data-action="minus">-</div>
+                    <div class="p-[20px] cursor-pointer" data-counter>1</div>
+                    <div class="p-[20px] cursor-pointer hover:bg-slate-100" data-action="plus">+</div>
+                </div>
+            </div>
+           </div>
+           
+           <div class="flex gap-[50px] justify-end m-[20px]">
+                <h4 class="p-[10px] text-blue-500">Total price <span data-total>280</span></h4>
+                <button type="submit" class="px-[40px] bg-blue-100 rounded-lg text-blue-500 font-bold hover:text-yellow-500">Submit</button>
+           </div>
+           
+           
+        </div>
+        <!-- Shopping cart -->   
+    </main>
+
+    <!-- Footer -->
+    <div class="my-[50px] text-center text-blue-500">
+        <p>Copyright © 2023 by <a href="https://www.facebook.com/ihor.sydorov" class="text-blue-500 font-bold hover:text-yellow-500">Sydorov Ihor</a></p>
+    </div>
+    <!-- Footer -->
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/conter.js"></script>
+    
+</body>
+</html>
